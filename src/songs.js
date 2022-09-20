@@ -21,7 +21,7 @@ function orderAlphabetically(array){
 
 //Exercise 4: Order by year, ascending
 function orderByYear(array){
-    let result = array.map((item) => item.year).sort().slice("a", "z")
+    let result = array.filter((item) => item.year).sort().reverse();
     console.log("Exercise 4 ->", result)
     return result;
 };
