@@ -42,8 +42,10 @@ function songsByGenre(array, genre) {
 };
 
 //Exercise 6: Modify the duration of songs to seconds
-function minutsToSeconds() {
-    //Write your code here
+function minutsToSeconds(array) {
+    let result = array.map((item) => ({duration: item.duration})).filter(function (item) { if("duration" in item) && array(item.duration)=== } return);
+    console.log("Exercise 6 ->", result)
+    return result;
 };
 
 //Exercise 7: Get the longest song
