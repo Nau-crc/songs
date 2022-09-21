@@ -27,8 +27,16 @@ function orderByYear(array){
 };
 
 //Exercise 5: Filter songs by genre
-function songsByGenre(array) {
-    let result = array.map((item) => ({title: item.title, year: item.year, artist: item.artist, album: item.album, duration: item.duration, genre: item.genre})).sort(function(a,b){if( a.genre < b.genre){return 1}return 0;})
+function songsByGenre(array, genre) {
+    let result = array.map((item) => (
+        {title: item.title, 
+        year: item.year, 
+        artist: item.artist, 
+        album: item.album, 
+        duration: item.duration, 
+        genre: item.genre
+        })).filter((item) =>
+            item.genre.includes(genre));
     console.log("Exercise 5 ->", result)
     return result;
 };
