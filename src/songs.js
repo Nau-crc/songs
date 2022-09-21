@@ -21,13 +21,13 @@ function orderAlphabetically(array){
 
 //Exercise 4: Order by year, ascending
 function orderByYear(array){
-    let result = array.filter((item) => item.year).sort().reverse();
+    let result = array.map((item) => ({ title: item.title, year: item.year,})).sort(function(a,b){if(a.title < b.title){return a.title.localeCompare(b.title)}}).sort(function(a,b){return a.year - b.year});
     console.log("Exercise 4 ->", result)
     return result;
 };
 
 //Exercise 5: Filter songs by genre
-function songsByGenre() {
+function songsByGenre(array) {
     //Write your code here
 };
 

@@ -123,20 +123,20 @@ describe('function "orderAlphabetically"', () => {
 
     it('should order them alphabetically.', () => {
         const arr = [
-          { title: 'aab' },
-          { title: 'aaa' },
-          { title: 'abc' },
-          { title: 'acb' },
-          { title: 'abb' }
+        { title: 'aab' },
+        { title: 'aaa' },
+        { title: 'abc' },
+        { title: 'acb' },
+        { title: 'abb' }
         ];
         expect(orderAlphabetically(arr)).toEqual([
-          'aaa',
-          'aab',
-          'abb',
-          'abc',
-          'acb'
+        'aaa',
+        'aab',
+        'abb',
+        'abc',
+        'acb'
         ]);
-      });
+    });
 
     it('should return the top 10 after ordering them alphabetically', () => {
         const arr = [
